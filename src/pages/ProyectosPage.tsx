@@ -110,7 +110,7 @@ export default function ProyectosPage() {
           <p className="text-xl mb-8 text-slate-600 max-w-2xl mx-auto">
             Hagamos realidad tu idea. Nuestro equipo de profesionales está listo para asesorarte en todo el proceso.
           </p>
-          <a href="/contacto" className="inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 px-8 rounded-sm transition-colors text-lg">
+          <a href="/ContactoPage" className="inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 px-8 rounded-sm transition-colors text-lg">
             Hablemos de tu Proyecto
             <ArrowRight className="w-5 h-5 ml-2" />
           </a>
