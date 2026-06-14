@@ -43,7 +43,7 @@ export default function Hero() {
                 <ChevronRight className="ml-2 h-5 w-5" />
               </a>
               <a 
-  href="/contacto"
+  href="/#contacto"
   className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-sm font-semibold flex items-center justify-center transition-all text-lg"
 >
   Solicitar Presupuesto
