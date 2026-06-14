@@ -59,7 +59,7 @@ export default function Projects() {
             </p>
           </div>
           <div>
-            <a href="/contacto" className="inline-flex items-center bg-transparent border-2 border-brand-500 text-brand-500 hover:bg-brand-500 hover:text-white px-6 py-3 rounded-sm font-semibold transition-colors">
+            <a href="/proyectos" className="inline-flex items-center bg-transparent border-2 border-brand-500 text-brand-500 hover:bg-brand-500 hover:text-white px-6 py-3 rounded-sm font-semibold transition-colors">
               Ver Todos Los Proyectos
             </a>
           </div>
