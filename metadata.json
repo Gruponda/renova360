@@ -1,0 +1,6 @@
+{
+  "name": "Grupo NDA - Construcción y Rehabilitación",
+  "description": "Sitio web para Grupo NDA, empresa especializada en construcción y rehabilitación de edificios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=Saira:wght@500;600;700&family=Genos:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-saira: "Saira", sans-serif;
+  --font-genos: "Genos", sans-serif;
+  --color-brand-500: #6ab4e4;
+  --color-brand-600: #5aa4d4;
+  --color-brand-900: #2b6484;
+}
