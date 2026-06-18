@@ -141,7 +141,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Grupo NDA Construcción y Rehabilitación. Todos los derechos reservados.
           </p>
           <div className="flex space-x-6 text-sm text-slate-500">
-            <a href="#" className="hover:text-brand-500 transition-colors">Política de Privacidad</a>
+            <a href="/privacidad" className="hover:text-brand-500 transition-colors">Política de Privacidad</a>
             <a href="/terminos" className="hover:text-brand-500 transition-colors">Términos de Servicio</a>
           </div>
         </div>
