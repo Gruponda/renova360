@@ -43,7 +43,11 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center gap-1">
-                <img src="https://drive.google.com/thumbnail?id=18tvo0hvDfoUPgEVlFPjITZFojr9kvINU&sz=w400" alt="Grupo NDA Logo" className="w-[80px] h-[80px] object-contain" />
+               <img
+  src="/logo.png"
+  alt="Grupo NDA Logo"
+  className="w-[80px] h-[80px] object-contain"
+/>
                 <div className="flex flex-col">
                   <div className="text-[39px] font-normal font-genos text-slate-900 leading-none">
                     <span className="tracking-tight">GRUPO</span>
