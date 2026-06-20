@@ -105,12 +105,42 @@ export default function Navbar() {
             </div>
           </div>
 
+          {/* MOBILE MENU */}
           {mobileMenuOpen && (
             <div className="md:hidden bg-white border-t">
-              <Link to="/nosotros" className="block px-4 py-2">Nosotros</Link>
-              <Link to="/servicios" className="block px-4 py-2">Servicios</Link>
-              <Link to="/proyectos" className="block px-4 py-2">Proyectos</Link>
-              <Link to="/contacto" className="block px-4 py-2 text-brand-500">Contacto</Link>
+
+              <Link
+                to="/nosotros"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-4 py-2"
+              >
+                Nosotros
+              </Link>
+
+              <Link
+                to="/servicios"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-4 py-2"
+              >
+                Servicios
+              </Link>
+
+              <Link
+                to="/proyectos"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-4 py-2"
+              >
+                Proyectos
+              </Link>
+
+              <Link
+                to="/contacto"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-4 py-2 text-brand-500"
+              >
+                Contacto
+              </Link>
+
             </div>
           )}
         </nav>
