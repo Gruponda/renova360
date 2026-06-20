@@ -2,7 +2,8 @@ import { Facebook, Twitter, Linkedin, Instagram, ArrowRight } from 'lucide-react
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyvx_upgoch3s8Te-W4Yg9eRLc2sc4vW9Mjq_LAz5xBibiO3GfLY-2WJgoau1Nqz_M/exec";
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbyvx_upgoch3s8Te-W4Yg9eRLc2sc4vW9Mjq_LAz5xBibiO3GfLY-2WJgoau1Nqz_M/exec";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -40,8 +41,9 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-6">
+
               <img
-                src="https://drive.google.com/thumbnail?id=1qiWs3d9itDihZY39vvxXmaaWbgDxaaUc&sz=w400"
+                src="/logo2.png"
                 alt="Grupo NDA Logo"
                 className="h-28 w-auto object-contain"
               />
@@ -80,8 +82,8 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-bold text-white mb-6">Enlaces</h4>
-            <ul className="space-y-4">
 
+            <ul className="space-y-4">
               <li>
                 <Link to="/nosotros" className="flex items-center text-slate-400 hover:text-brand-500">
                   <ArrowRight className="w-4 h-4 mr-2" />
@@ -109,13 +111,13 @@ export default function Footer() {
                   Contacto
                 </Link>
               </li>
-
             </ul>
           </div>
 
           {/* Services */}
           <div>
             <h4 className="text-lg font-bold text-white mb-6">Servicios</h4>
+
             <ul className="space-y-4 text-slate-400">
               <li>Construcción</li>
               <li>Reformas Integrales</li>
@@ -166,9 +168,15 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-6 text-sm text-slate-500">
-            <Link to="/privacidad" className="hover:text-brand-500">Privacidad</Link>
-            <Link to="/cookies" className="hover:text-brand-500">Cookies</Link>
-            <Link to="/terminos" className="hover:text-brand-500">Términos</Link>
+            <Link to="/privacidad" className="hover:text-brand-500">
+              Privacidad
+            </Link>
+            <Link to="/cookies" className="hover:text-brand-500">
+              Cookies
+            </Link>
+            <Link to="/terminos" className="hover:text-brand-500">
+              Términos
+            </Link>
           </div>
 
         </div>

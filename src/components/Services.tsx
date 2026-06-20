@@ -72,8 +72,8 @@ export default function Services() {
                     {service.description}
                   </p>
                   <a href="/contacto" className="inline-flex items-center text-brand-500 font-bold hover:text-brand-600">
-                    Leer más
-                    <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform" />
+                    
+                    
                   </a>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import residentialImage from '../assets/images/residential_renovation_1781416513331.jpg';
 import facadeImage from '../assets/images/historic_facade_renovation_1781415880755.jpg';
 import officeInteriorImage from '../assets/images/renovated_office_interior_1781415981465.jpg';
@@ -58,64 +58,83 @@ const projects = [
 export default function ProyectosPage() {
   return (
     <div className="pt-32 pb-20">
-      {/* Header Section */}
+
+      {/* Header */}
       <section className="bg-slate-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-display">Nuestros Proyectos</h1>
-            <div className="w-20 h-1 bg-brand-500 mx-auto mb-6"></div>
-            <p className="text-xl text-slate-300">
-              Explora una selección de nuestras obras más destacadas. Excelencia y garantía en cada detalle.
-            </p>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Nuestros Proyectos
+          </h1>
+          <div className="w-20 h-1 bg-brand-500 mx-auto mb-6"></div>
+          <p className="text-xl text-slate-300">
+            Explora una selección de nuestras obras más destacadas. Excelencia y garantía en cada detalle.
+          </p>
         </div>
       </section>
 
-      {/* Projects Grid Section */}
+      {/* Grid */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
             {projects.map((project, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-sm cursor-pointer aspect-auto h-80 shadow-md">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-sm cursor-pointer h-80 shadow-md"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
+
                 <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+
                   <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+
                     <span className="text-brand-500 font-semibold tracking-wider uppercase text-xs mb-2 block">
                       {project.category}
                     </span>
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-2xl font-bold text-white">
-                        {project.title}
-                      </h3>
-                      <div className="w-10 h-10 bg-brand-500 flex items-center justify-center rounded-sm">
-                        <ExternalLink className="w-5 h-5 text-white" />
-                      </div>
-                    </div>
+
+                    <h3 className="text-2xl font-bold text-white">
+                      {project.title}
+                    </h3>
+
                   </div>
+
                 </div>
               </div>
             ))}
+
           </div>
+
         </div>
       </section>
-      
-      {/* CTA Section */}
+
+      {/* CTA */}
       <section className="bg-slate-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-slate-900">¿Pensando en tu próximo proyecto?</h2>
+
+          <h2 className="text-3xl font-bold mb-6 text-slate-900">
+            ¿Pensando en tu próximo proyecto?
+          </h2>
+
           <p className="text-xl mb-8 text-slate-600 max-w-2xl mx-auto">
             Hagamos realidad tu idea. Nuestro equipo de profesionales está listo para asesorarte en todo el proceso.
           </p>
-          <a href="/contacto" className="inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 px-8 rounded-sm transition-colors text-lg">
+
+          <a
+            href="/contacto"
+            className="inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 px-8 rounded-sm transition-colors text-lg"
+          >
             Hablemos de tu Proyecto
             <ArrowRight className="w-5 h-5 ml-2" />
           </a>
+
         </div>
       </section>
+
     </div>
   );
 }
