@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { ArrowRight } from 'lucide-react';
 import residentialImage from '../assets/images/residential_renovation_1781416513331.jpg';
 import facadeImage from '../assets/images/historic_facade_renovation_1781415880755.jpg';
@@ -124,13 +126,13 @@ export default function ProyectosPage() {
             Hagamos realidad tu idea. Nuestro equipo de profesionales está listo para asesorarte en todo el proceso.
           </p>
 
-          <a
-            href="/contacto"
+          <Link
+            to="/contacto"
             className="inline-flex items-center bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 px-8 rounded-sm transition-colors text-lg"
           >
             Hablemos de tu Proyecto
             <ArrowRight className="w-5 h-5 ml-2" />
-          </a>
+          </Link>
 
         </div>
       </section>
