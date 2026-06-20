@@ -23,7 +23,7 @@ export default function NosotrosPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
             {/* TEXT */}
             <div>
@@ -48,34 +48,16 @@ export default function NosotrosPage() {
               </div>
             </div>
 
-            {/* IMAGE */}
-            <div>
-
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80"
-                  alt="Equipo de construcción"
-                  className="rounded-sm shadow-2xl w-full"
-                />
-
-                {/* DESKTOP BADGE */}
-                <div className="hidden md:block absolute -bottom-8 -left-8 bg-brand-500 p-8 text-white rounded-sm shadow-xl">
-                  <div className="text-4xl font-bold mb-2">20+</div>
-                  <div className="text-brand-900 font-semibold">
-                    Años de experiencia
-                  </div>
-                </div>
-              </div>
-
-              {/* MOBILE BADGE (BELOW IMAGE) */}
-              <div className="md:hidden mt-6 bg-brand-500 p-6 text-white rounded-sm shadow-xl text-center">
-                <div className="text-3xl font-bold mb-2">20+</div>
-                <div className="text-brand-900 font-semibold">
+            {/* EXPERIENCE CARD ONLY (NO IMAGE) */}
+            <div className="flex items-center justify-center">
+              <div className="bg-brand-500 p-10 text-white rounded-sm shadow-xl text-center w-full max-w-sm">
+                <div className="text-5xl font-bold mb-2">20+</div>
+                <div className="text-brand-900 font-semibold text-lg">
                   Años de experiencia
                 </div>
               </div>
-
             </div>
+
           </div>
         </div>
       </section>
