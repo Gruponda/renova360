@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
+import CookiesPage from './pages/CookiesPage';
+import CookieBanner from './components/CookieBanner';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -48,6 +50,7 @@ export default function App() {
         <Navbar />
 
         <Routes>
+          <Route path="/cookies" element={<CookiesPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/nosotros" element={<NosotrosPage />} />
           <Route path="/servicios" element={<ServiciosPage />} />
@@ -58,7 +61,8 @@ export default function App() {
         </Routes>
 
         <Footer />
-        <WhatsAppButton />
+<WhatsAppButton />
+<CookieBanner />
       </div>
     </Router>
   );
