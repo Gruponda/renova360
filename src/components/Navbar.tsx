@@ -35,7 +35,7 @@ export default function Navbar() {
 
               <div className="flex items-center gap-1 whitespace-nowrap">
                 <Clock className="h-3 w-3 text-brand-500" />
-                <span>L-V 8-18h</span>
+                <span>L-V 8-19h</span>
               </div>
             </div>
 
