@@ -54,7 +54,7 @@ export default function Navbar() {
 
               <div className="flex items-center">
                 <Clock className="h-4 w-4 mr-2 text-brand-500" />
-                <span>Lunes - Viernes: 8:00 - 18:00</span>
+                <span>Lunes - Viernes: 8:00 - 19:00</span>
               </div>
             </div>
 
