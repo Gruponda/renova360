@@ -48,7 +48,7 @@ export default function Navbar() {
 
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2 text-brand-500" />
-                  <a href="mailto:info@gruponda.com">info@gruponda.com</a>
+                  <a href="mailto:info@gruponda.com">info.gruponda@gmail.com</a>
                 </div>
               </div>
 
