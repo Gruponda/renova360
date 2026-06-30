@@ -30,7 +30,7 @@ export default function Navbar() {
 
               <a href="mailto:info.gruponda@gmail.com" className="flex items-center gap-1 whitespace-nowrap">
                 <Mail className="h-3 w-3 text-brand-500" />
-                <span>info@gruponda.com</span>
+                <span>info.gruponda@gmail.com</span>
               </a>
 
               <div className="flex items-center gap-1 whitespace-nowrap">
