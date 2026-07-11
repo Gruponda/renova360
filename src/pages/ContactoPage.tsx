@@ -21,20 +21,29 @@ export default function ContactoPage() {
           rel="canonical"
           href="https://gruponda.es/contacto"
         />
-        <script type="application/ld+json">
+       <script type="application/ld+json">
 {JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "ConstructionCompany",
+  "@type": "LocalBusiness",
+  "additionalType": "https://schema.org/ProfessionalService",
   "name": "Grupo NDA",
   "url": "https://gruponda.es",
-  "telephone": "+34 664 716 108",
+  "telephone": [
+    "+34 664 716 108",
+    "+34 630 085 054"
+  ],
   "email": "info.gruponda@gmail.com",
+  "description": "Empresa especializada en construcción, rehabilitación, reformas y obra civil en Madrid.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Calle de Godella 10",
     "postalCode": "28021",
     "addressLocality": "Madrid",
     "addressCountry": "ES"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Madrid"
   }
 })}
 </script>
