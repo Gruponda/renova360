@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import { ArrowRight } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import residentialImage from '../assets/images/residential_renovation_1781416513331.jpg';
 import facadeImage from '../assets/images/historic_facade_renovation_1781415880755.jpg';
 import officeInteriorImage from '../assets/images/renovated_office_interior_1781415981465.jpg';
@@ -59,6 +60,20 @@ const projects = [
 
 export default function ProyectosPage() {
   return (
+     <>
+      <Helmet>
+        <title>Proyectos de construcción | Grupo NDA</title>
+
+        <meta
+          name="description"
+          content="Descubre los proyectos realizados por Grupo NDA: obra nueva, rehabilitación, reformas integrales y obra civil en España."
+        />
+
+        <link
+          rel="canonical"
+          href="https://gruponda.es/proyectos"
+        />
+      </Helmet>
     <div className="pt-32 pb-20">
 
       {/* Header */}
@@ -86,10 +101,10 @@ export default function ProyectosPage() {
                 className="group relative overflow-hidden rounded-sm cursor-pointer h-80 shadow-md"
               >
                 <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                />
+  src={project.image}
+  alt={`${project.title} - Grupo NDA`}
+  loading="lazy"
+/>
 
                 <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
 
@@ -137,6 +152,7 @@ export default function ProyectosPage() {
         </div>
       </section>
 
-    </div>
+ </div>
+    </>
   );
 }

@@ -1,9 +1,45 @@
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 import ContactForm from '../components/ContactForm';
 
+
 export default function ContactoPage() {
   return (
+    <>
+      <Helmet>
+        <title>
+          Contacto | Grupo NDA - Empresa de construcción en Madrid
+        </title>
+
+        <meta
+          name="description"
+          content="Contacta con Grupo NDA para proyectos de construcción, rehabilitación y reformas en Madrid. Solicita asesoramiento personalizado."
+        />
+
+        <link
+          rel="canonical"
+          href="https://gruponda.es/contacto"
+        />
+        <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ConstructionCompany",
+  "name": "Grupo NDA",
+  "url": "https://gruponda.es",
+  "telephone": "+34 664 716 108",
+  "email": "info.gruponda@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle de Godella 10",
+    "postalCode": "28021",
+    "addressLocality": "Madrid",
+    "addressCountry": "ES"
+  }
+})}
+</script>
+      </Helmet>
+
     <div className="pt-32 pb-20">
       {/* Header Section */}
       <section className="bg-slate-900 text-white py-20">
@@ -45,7 +81,10 @@ export default function ContactoPage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-slate-900 mb-1">Visítanos</h4>
-                    <p className="text-slate-600">Calle de Godella 10, 28021<br/>Madrid, España</p>
+                    <address className="text-slate-600 not-italic">
+  Calle de Godella 10<br/>
+  28021 Madrid, España
+</address>
                   </div>
                 </div>
                 
@@ -83,6 +122,7 @@ export default function ContactoPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

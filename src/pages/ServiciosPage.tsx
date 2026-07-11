@@ -1,5 +1,6 @@
 import { Hammer, Building2, HardHat, PaintRoller, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const services = [
   {
@@ -66,6 +67,22 @@ const services = [
 
 export default function ServiciosPage() {
   return (
+     <>
+      <Helmet>
+        <title>
+          Servicios de construcción y rehabilitación | Grupo NDA
+        </title>
+
+        <meta
+          name="description"
+          content="Grupo NDA ofrece servicios de obra nueva, rehabilitación integral, reformas a medida y mantenimiento de edificios en España."
+        />
+
+        <link
+          rel="canonical"
+          href="https://gruponda.es/servicios"
+        />
+      </Helmet>
     <div className="pt-32 pb-20">
       {/* Header Section */}
       <section className="bg-slate-900 text-white py-20">
@@ -100,8 +117,9 @@ export default function ServiciosPage() {
                   <div className="w-full lg:w-1/2">
                     <div className="relative rounded-sm overflow-hidden shadow-2xl group">
                       <img
-                        src={service.image}
-                        alt={service.title}
+  src={service.image}
+  alt={`${service.title} - Grupo NDA`}
+  loading="lazy"
                         className="w-full h-80 md:h-96 object-cover transform group-hover:scale-105 transition-transform duration-700"
                       />
                       <div className="absolute top-6 right-6 w-20 h-20 bg-brand-500 flex items-center justify-center shadow-md">
@@ -112,7 +130,7 @@ export default function ServiciosPage() {
 
                   <div className="w-full lg:w-1/2">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 font-display">
-                      {service.title}
+                      Obra Nueva y Construcción de Edificios
                     </h2>
 
                     <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -161,6 +179,7 @@ export default function ServiciosPage() {
           </Link>
         </div>
       </section>
-    </div>
+     </div>
+    </>
   );
 }

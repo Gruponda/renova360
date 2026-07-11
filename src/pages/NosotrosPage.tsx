@@ -1,7 +1,17 @@
 import { CheckCircle2, Target, Eye, Shield, Users, Award } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function NosotrosPage() {
   return (
+     <>
+      <Helmet>
+        <title>Nosotros | Grupo NDA - Construcción y rehabilitación</title>
+        <meta
+          name="description"
+          content="Conoce Grupo NDA, empresa especializada en construcción, rehabilitación y obra civil con más de 20 años de experiencia."
+        />
+      </Helmet>
+    
     <div className="pt-32 pb-20">
 
       {/* Header Section */}
@@ -141,6 +151,7 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-    </div>
+ </div>
+    </>
   );
 }
